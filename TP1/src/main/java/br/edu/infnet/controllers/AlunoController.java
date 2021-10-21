@@ -24,8 +24,9 @@ public class AlunoController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String name = request.getParameter("Name");
 		String mail = request.getParameter("Email");
+		String password = request.getParameter("Password");
 		
-		Aluno aluno = new Aluno(name, mail);
+		Aluno aluno = new Aluno(name, mail, password);
 		System.out.println(aluno.toString());
 		
 		PrintWriter out = response.getWriter();

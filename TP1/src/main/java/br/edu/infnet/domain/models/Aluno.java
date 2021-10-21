@@ -21,10 +21,10 @@ public class Aluno {
 		Email = email;
 	}
 
-	public Aluno(String name, String email) {
-		super();
+	public Aluno(String name, String email, String password) {		
 		Name = name;
 		Email = email;
+		Password = password;
 	}
 
 	public String getPassword() {
@@ -38,6 +38,6 @@ public class Aluno {
 	
 	@Override
 	public String toString() {
-		return String.format("O aluno '%s' foi cadastrado com o e-mail '%s'", this.Name, this.Email) ;
+		return String.format("O aluno '%s' foi cadastrado com o e-mail '%s' e com a senha '%s'", this.Name, this.Email, this.Password) ;
 	}	
 }
